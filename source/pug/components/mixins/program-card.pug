@@ -1,0 +1,9 @@
+mixin program-card(options = {})
+  - const image = options.image
+  - const btnText = options.btnText
+
+  .program-card&attributes(attributes)
+    a(href=options.href).program-card__wrapper
+      .program-card__pic
+        +picture-adaptive("content/program", image, "jpg", 520, 720, "", isLoadingLazy)
+      +btn({href: options.href, text: btnText}).program-card__btn

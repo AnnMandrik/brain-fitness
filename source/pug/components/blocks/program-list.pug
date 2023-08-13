@@ -1,0 +1,9 @@
+mixin program-list(data = {})
+
+  .program-list
+    .container
+      .container__inner
+        h2.title Программы
+        .program-list__wrapper
+          each item in data.items
+            +program-card(item)

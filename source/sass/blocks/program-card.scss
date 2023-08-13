@@ -1,0 +1,29 @@
+.program-card {
+  border-radius: 10px;
+  position: relative;
+  min-height: 720px;
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+
+  &__wrapper {
+  }
+
+  &__pic {
+    position: absolute;
+    width: 520px;
+    height: 720px;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+
+    img {
+      border-radius: 50px;
+    }
+  }
+
+  &__btn {
+    position: relative;
+  }
+}

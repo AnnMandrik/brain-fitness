@@ -1,18 +1,24 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
+  padding: 12px 25px;
+  width: 520px;
+  min-height: 92px;
+  margin: 0;
 
-  color: $color-default-white;
+  color: $color-midnight-express;
 
-  background-color: $color-neon-blue;
+  background: $main-gradient;
   border: none;
   cursor: pointer;
+  border-radius: 50px;
+
+  text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0.48px;
 
   transition: opacity $trans-default;
-
-  &--red {
-    background-color: $color-torch-red;
-  }
 
   &:disabled {
     opacity: 0.5;
@@ -21,6 +27,6 @@
   }
 
   @include hover-focus {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }

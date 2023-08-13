@@ -10,24 +10,19 @@ html(lang="ru")
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    meta(name="description", content="ProjectName — описание")
-    //- генерируйте favicon тут - https://realfavicongenerator.net/
+    meta(name="description", content="Здоровье твоего мозга определяют качество твоей жизни! Нейропсихология&nbsp;&mdash; это направление, лежащее на&nbsp;стыке психологии и&nbsp;нейронауки, нацелена на&nbsp;понимание связи структуры и&nbsp;функционирования головного мозга с&nbsp;психологическим поведением людей.")
+    link(rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png")
+    link(rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png")
+    link(rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png")
+    link(rel="manifest" crossorigin="use-credentials" href="manifest.json")
+    meta(name="msapplication-TileColor" content="#ffffff")
+    meta(name="msapplication-TileImage" content="/ms-icon-144x144.png")
+    meta(name="theme-color" content="#ffffff")
     //- в подключение фавикон манифеста обязательно добавьте строчки crossorigin="use-credentials"
     //- используйте только для шрифта находящегося на первом экране
-    //- link(rel="preload", href="fonts/placeholder.woff2", as="font", crossorigin="anonymous")
-    //- При необходимости вы можете добавить разметку Open graf. - const Open graf = true
-    if (openGraf)
-      //- Обязательно измените содержание контента на тот что необходим!
-      //- Введите заголовок
-      meta(property="og:title", content="Лига решений")
-      //- Введите заголовок путь к картинке
-      meta(property="og:image", content="https://24fortest.ru/img/content/sharing.png")
-      //- Введите необходимый тип
-      meta(property="og:type", content="article")
-      //- Введите адрес сайта
-      meta(property="og:url", content="https://24fortest.ru/")
-      //- Введите описание
-      meta(property="og:description", content="Простые и понятные решения в помощь разработчикам от команды Лига А")
+    link(rel="preload", href="fonts/Montserrat-Medium.woff2", as="font", crossorigin="anonymous")
+    link(rel="preload", href="fonts/Montserrat-Regular.woff2", as="font", crossorigin="anonymous")
+    link(rel="preload", href="fonts/Montserrat-SemiBold.woff2", as="font", crossorigin="anonymous")
 
     link(rel="stylesheet", href="css/style.min.css")
 

@@ -1,7 +1,7 @@
 extends ../components/base/layout
 
 block variables
-  - const title = "ProjectName" //- на страницах кроме главной используйте О нас — ProjectName
+  - const title = "Нейропсихология" //- на страницах кроме главной используйте О нас — ProjectName
   - const wrapperMods = ""
   - const hasHeader = true
   - const headerMods = ""
@@ -9,10 +9,38 @@ block variables
   - const footerMods = ""
   - const currentUrl = "index.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
 
+  -
+    const programListData = {
+      items: [
+        {
+          href: "#",
+          image: "neiro",
+          btnText: "Нейрогимнастика",
+        },
+        {
+          href: "#",
+          image: "logica",
+          btnText: "Логика",
+        },
+        {
+          href: "#",
+          image: "psicho",
+          btnText: "Психология",
+        },
+        {
+          href: "#",
+          image: "emotion",
+          btnText: "Эмоциональный интеллект",
+        },
+      ],
+    }
+
 block main
   main
     //- на странице запрещен "голый" код
     //- все блоки вставляются из папки pug/components/blocks
     +intro()
+    +about()
+    +program-list(programListData)
 
 block modals

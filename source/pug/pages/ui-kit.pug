@@ -104,9 +104,6 @@ block main
       pointer-events: none;
     }
 
-    .btn {
-      margin: 10px 0;
-    }
 
     .wrapper {
       overflow: hidden;
@@ -119,6 +116,8 @@ block main
         span вернуться на разводящую
       ul.header-ui__inner-list
         li.header-ui__inner-item
+          a.header-ui__inner-link(href="#program-card", data-navigation-link) Program-card
+        li.header-ui__inner-item
           a.header-ui__inner-link(href="#modals", data-navigation-link) Modals
         li.header-ui__inner-item
           a.header-ui__inner-link(href="#buttons", data-navigation-link) Buttons
@@ -129,6 +128,12 @@ block main
     .container
       h1 UI-kit
       //- все модалки проекта добавляем сюда, для удобства тестирования
+      section(id="program-card")
+        h2 Program-card
+        +program-card({href: "#", image: "emotion", btnText: "Эмоциональный интеллект"})
+        p Пример вызова
+        code
+          pre +program-card({href: "#", image: "emotion", btnText: "Эмоциональный интеллект"})
       section(id="modals")
         h2 Modals
         p

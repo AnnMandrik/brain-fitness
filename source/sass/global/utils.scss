@@ -17,14 +17,6 @@
   }
 }
 
-.rouble {
-  font-family: $ff-rouble;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
-}
-
 .visually-hidden {
   position: absolute;
 
@@ -40,6 +32,23 @@
 
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+}
+
+.title {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.7px;
+
+  @include vp-1023 {
+    font-size: 48px;
+  }
+
+  @include vp-374 {
+    font-size: 22px;
+    line-height: 135%;
+  }
 }
 
 .scroll-lock-ios {

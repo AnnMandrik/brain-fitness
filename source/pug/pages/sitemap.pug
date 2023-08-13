@@ -15,9 +15,6 @@ block main
       line-height: 28px;
     }
 
-    a {
-      color: rgb(10, 10, 175);
-    }
 
     li {
       font-size: 18px;
@@ -62,7 +59,8 @@ block main
 
   main
     .container
-      img(src="https://via.placeholder.com/300x150" width="300" alt="Логотип проекта")
+      div(style="width: 400px; height: 200px; background-color: #011140; padding: 25px 0 0 50px;")
+        img(src="img/svg/logo.svg" width="193" alt="Логотип проекта")
       h1 Список страниц
       ol
         each page in pages

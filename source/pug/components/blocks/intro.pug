@@ -1,10 +1,11 @@
 mixin intro()
   .intro
-    //- вставлять блоки во внешний контейнер неверно
-    //- все блоки содержат в себе container без доп класса tutorial__wrapper
-    .container
-      p(style="margin-top: 40px;") Текст&nbsp;с&nbsp;мнемониками
-
-      p(style="margin-top: 40px;") Пример использования +img()
-      p(style="margin-bottom: 40px;")
-        +img("content", "placeholder", "png", 120, 120, "Пример")
+    .intro__wrapper
+      .intro__pic
+        +picture-adaptive("content", "fon", "jpg", 1920, 979, "", isLoadingLazy)
+      .intro__wrapper-inner
+        h1.intro__title Нейропсихология
+        .intro__slogan
+          p Здоровье твоего мозга определяют качество твоей жизни!
+          p Нейропсихология помогает сделать жизнь ЛУЧШЕ!
+          p Это направление, лежащее на&nbsp;стыке психологии и&nbsp;нейронауки, нацелено на&nbsp;понимание связи, структуры и&nbsp;функционирования головного мозга с&nbsp;психологическим поведением людей.

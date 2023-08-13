@@ -53,7 +53,7 @@
       width: 28px;
       height: 28px;
 
-      border: 1.5px solid #2c39f2;
+      border: 1.5px solid #ffffff;
 
       transition: border 0.3s ease;
 
@@ -66,7 +66,7 @@
         width: 20px;
         height: 20px;
 
-        background-color: rgba(#2c39f2, 0);
+        background-color: rgba(#ffffff, 0);
 
         transform: translate(-50%, -50%);
 
@@ -84,7 +84,7 @@
       width: 28px;
       height: 28px;
 
-      border: 1px solid #2c39f2;
+      border: 1px solid $color-default-black;
       border-radius: 50%;
 
       transition: border 0.3s ease;
@@ -109,16 +109,16 @@
   }
 
   input:checked + .custom-toggle__icon {
-    border: 1.5px solid #2c39f2;
+    border: 1.5px solid #ffffff;
 
     &::before {
-      background-color: #2c39f2;
+      background-color: #ffffff;
     }
   }
 
   &.is-invalid {
     label span {
-      color: #ff1553;
+      color: $color-default-black;
     }
   }
 
@@ -128,11 +128,11 @@
     bottom: -5px;
 
     &--invalid {
-      color: #ff0000;
+      color: $color-default-black;
     }
 
     &--valid {
-      color: #15ab07;
+      color: $color-default-black;
     }
   }
 }

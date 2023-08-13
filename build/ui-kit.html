@@ -5,7 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="ProjectName — описание">
+    <meta name="description" content="Здоровье твоего мозга определяют качество твоей жизни! Нейропсихология&amp;nbsp;&amp;mdash; это направление, лежащее на&amp;nbsp;стыке психологии и&amp;nbsp;нейронауки, нацелена на&amp;nbsp;понимание связи структуры и&amp;nbsp;функционирования головного мозга с&amp;nbsp;психологическим поведением людей.">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" crossorigin="use-credentials" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -111,9 +121,6 @@
           pointer-events: none;
         }
         
-        .btn {
-          margin: 10px 0;
-        }
         
         .wrapper {
           overflow: hidden;
@@ -123,6 +130,7 @@
       <header class="header-ui">
         <nav class="header-ui__nav container"><a class="components-backwards" href="sitemap.html"><span>&larr;</span><span>вернуться на разводящую</span></a>
           <ul class="header-ui__inner-list">
+            <li class="header-ui__inner-item"><a class="header-ui__inner-link" href="#program-card" data-navigation-link>Program-card</a></li>
             <li class="header-ui__inner-item"><a class="header-ui__inner-link" href="#modals" data-navigation-link>Modals</a></li>
             <li class="header-ui__inner-item"><a class="header-ui__inner-link" href="#buttons" data-navigation-link>Buttons</a></li>
             <li class="header-ui__inner-item"><a class="header-ui__inner-link" href="#form-elements" data-navigation-link>Form elements</a></li>
@@ -132,6 +140,20 @@
       <main>
         <div class="container">
           <h1>UI-kit</h1>
+          <section id="program-card">
+            <h2>Program-card</h2>
+            <div class="program-card"><a class="program-card__wrapper" href="#">
+                <div class="program-card__pic">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/program/emotion-mobile.webp, img/content/program/emotion-mobile@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/content/program/emotion-mobile.jpg 1x,img/content/program/emotion-mobile@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/content/program/emotion.webp, img/content/program/emotion@2x.webp 2x"><img src="img/content/program/emotion.jpg" srcset="img/content/program/emotion@2x.jpg 2x" width="520" height="720" alt="">
+                  </picture>
+                </div>
+                <a class="btn program-card__btn" href="#">Эмоциональный интеллект</a></a></div>
+            <p>Пример вызова</p><code>
+              <pre>+program-card({href: "#", image: "emotion", btnText: "Эмоциональный интеллект"})</pre></code>
+          </section>
           <section id="modals">
             <h2>Modals</h2>
             <p>
