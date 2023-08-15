@@ -1,0 +1,31 @@
+.program-list {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 144px 202px;
+    margin-top: 90px;
+    padding: 0 99px;
+
+    @include vp-1439 {
+      padding: 0;
+      column-gap: 120px;
+    }
+
+    @include vp-1279 {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+
+  .program-card:not(:last-child) .btn {
+    padding: 18px 25px;
+  }
+
+  .program-card:nth-child(2) .btn {
+    padding: 18px 168px;
+  }
+
+  .program-card:nth-child(3) .btn {
+    padding: 18px 106px;
+  }
+}
