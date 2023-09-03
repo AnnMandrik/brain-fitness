@@ -1,31 +1,40 @@
 .program-list {
   &__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 144px 202px;
+    display: flex;
+    // max-width: 1210px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px 45px;
     margin-top: 90px;
-    padding: 0 99px;
+    padding: 0;
 
     @include vp-1439 {
       padding: 0;
-      column-gap: 120px;
-    }
-
-    @include vp-1279 {
-      grid-template-columns: 1fr;
-      justify-items: center;
+      column-gap: 25px;
     }
   }
 
-  .program-card:not(:last-child) .btn {
-    padding: 18px 25px;
+  .program-card:nth-child(1) .btn {
+    padding: 25px 15px;
+
+    @include vp-374 {
+      padding: 10px 0;
+    }
   }
 
   .program-card:nth-child(2) .btn {
-    padding: 18px 168px;
+    padding: 25px 110px;
+
+    @include vp-374 {
+      padding: 12px 78px;
+    }
   }
 
-  .program-card:nth-child(3) .btn {
-    padding: 18px 106px;
+  .program-card:nth-child(4) .btn {
+    padding: 25px 70px;
+
+    @include vp-374 {
+      padding: 7px 16px;
+    }
   }
 }

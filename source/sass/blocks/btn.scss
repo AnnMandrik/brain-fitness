@@ -1,8 +1,8 @@
 .btn {
   display: inline-flex;
   padding: 12px 25px;
-  width: 520px;
-  min-height: 92px;
+  width: 375px;
+  min-height: 70px;
   margin: 0;
 
   color: $color-midnight-express;
@@ -13,10 +13,10 @@
   border-radius: 50px;
 
   text-align: center;
-  font-size: 48px;
+  font-size: 35px;
   font-weight: 500;
-  line-height: 40px;
-  letter-spacing: 0.48px;
+  line-height: 30px;
+  letter-spacing: 0.35px;
 
   transition: opacity $trans-default;
 
@@ -27,6 +27,14 @@
   }
 
   @include hover-focus {
-    opacity: 0.6;
+    opacity: 0.7;
+  }
+
+  @include vp-374 {
+    width: 249px;
+    min-height: 55px;
+
+    font-size: 24px;
+    letter-spacing: 0.24px;
   }
 }

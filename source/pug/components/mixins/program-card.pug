@@ -1,9 +1,13 @@
 mixin program-card(options = {})
   - const image = options.image
+  - const width = options.width
+  - const height = options.height
   - const btnText = options.btnText
+  - const btn = options.btn || false
 
   .program-card&attributes(attributes)
     a(href=options.href)
       .program-card__pic
-        +picture-adaptive("content/program", image, "jpg", 520, 720, "", isLoadingLazy)
-      +btn({href: options.href, text: btnText}).program-card__btn
+        +picture-adaptive("content/program", image, "jpg", width, height, "", isLoadingLazy)
+      if btn
+        +btn({href: options.href, text: btnText}).program-card__btn
