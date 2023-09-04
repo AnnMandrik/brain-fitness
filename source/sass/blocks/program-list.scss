@@ -1,7 +1,6 @@
 .program-list {
   &__wrapper {
     display: flex;
-    // max-width: 1210px;
     flex-wrap: wrap;
     justify-content: center;
     gap: 100px 45px;
@@ -18,7 +17,7 @@
     padding: 25px 15px;
 
     @include vp-374 {
-      padding: 10px 0;
+      padding: 10px 20px;
     }
   }
 
@@ -34,7 +33,7 @@
     padding: 25px 70px;
 
     @include vp-374 {
-      padding: 7px 16px;
+      padding: 15px 60px;
     }
   }
 }

@@ -118,6 +118,8 @@ block main
         li.header-ui__inner-item
           a.header-ui__inner-link(href="#program-card", data-navigation-link) Program-card
         li.header-ui__inner-item
+          a.header-ui__inner-link(href="#skill-card", data-navigation-link) Skill-card
+        li.header-ui__inner-item
           a.header-ui__inner-link(href="#modals", data-navigation-link) Modals
         li.header-ui__inner-item
           a.header-ui__inner-link(href="#buttons", data-navigation-link) Buttons
@@ -134,6 +136,18 @@ block main
         p Пример вызова
         code
           pre +program-card({href: "#", image: "emotion", width: "375px", height: "585px", btn: true, btnText: "Эмоциональный интеллект"})
+      section(id="skill-card")
+        h2 Skill-card
+        +skill-card({name: "icon-logika", width: 96, height: 90, text: "Умение быстро решать задачи", textTwo: "тренировка навыка &laquo;находить выход из&nbsp;любой ситуации&raquo;", textThree: "скорость реакции"})
+        p Пример вызова
+        code
+          pre +skill-card({name: "icon-logika", width: "96", height: "90", text: "Умение быстро решать задачи", textTwo: "тренировка навыка &laquo;находить выход из&nbsp;любой ситуации&raquo;", textThree: "скорость реакции"})
+        +skill-card({name: "icon-emotional", width: "77", height: "84", text: "Самообладание", textTwo: "Распознавание и&nbsp;контроль эмоций", isSquare: true})
+        p Пример вызова
+        code
+          pre +skill-card({name: "icon-emotional", width: "77", height: "84", text: "Самообладание", textTwo: "Распознавание и&nbsp;контроль эмоций", isSquare: true})
+      section(id="modals")
+      section(id="modals")
       section(id="modals")
         h2 Modals
         p

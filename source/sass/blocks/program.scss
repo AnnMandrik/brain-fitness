@@ -1,0 +1,29 @@
+.program {
+  &__info {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: 0.2px;
+    margin-top: 100px;
+    margin-bottom: 260px;
+
+    @include vp-767 {
+      margin-top: 50px;
+      margin-bottom: 80px;
+    }
+
+    @include vp-374 {
+      font-size: 15px;
+      line-height: 28px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 40px;
+
+    @include vp-374 {
+      margin-bottom: 25px;
+    }
+  }
+}

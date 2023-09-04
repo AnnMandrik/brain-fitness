@@ -13,7 +13,7 @@ block variables
     const programListData = {
       items: [
         {
-          href: "#",
+          href: "neurogym.html",
           image: "neiro",
           btn: true,
           width: 375,
@@ -21,7 +21,7 @@ block variables
           btnText: "Нейрогимнастика",
         },
         {
-          href: "#",
+          href: "logic.html",
           btn: true,
           width: 375,
           height: 585,
@@ -55,6 +55,59 @@ block variables
       ],
     }
 
+  -
+    const skillListData = {
+      cards: [
+        {
+          name: "icon-logika",
+          width: 96,
+          height: 90,
+          text: "Умение быстро решать задачи",
+          textTwo: "тренировка навыка &laquo;находить выход из&nbsp;любой ситуации&raquo;",
+          textThree: "скорость реакции",
+        },
+        {
+          name: "icon-psihologiya",
+          width: 96,
+          height: 97,
+          text: "Мышление:",
+          textTwo: "понимание<br>запоминание<br>анализ<br>оценка<br>синтез<br>применение",
+        },
+        {
+          name: "icon-psihologiya2",
+          width: 96,
+          height: 102,
+          text: "способность чувствовать себя",
+          textTwo: "Самооценка",
+          textThree: "Уверенность в&nbsp;своих силах",
+        },
+        {
+          name: "icon-emotional",
+          width: 77,
+          height: 84,
+          text: "Самообладание",
+          textTwo: "Распознавание и&nbsp;контроль эмоций",
+          isSquare: true,
+        },
+        {
+          name: "icon-intellekt",
+          width: 99,
+          height: 105,
+          text: "развитие логического мышления и&nbsp;воображения",
+          isSquare: true,
+        },
+        {
+          name: "icon-intellekt2",
+          width: 91,
+          height: 97,
+          text: "умение дружить",
+          textTwo: "чувствовать окружающих людей",
+          textThree: "эффективно взаимодействовать",
+          isSquare: true,
+        },
+      ],
+    }
+
 block main
   main
     //- на странице запрещен "голый" код
@@ -62,5 +115,6 @@ block main
     +intro()
     +about()
     +program-list(programListData)
+    +skill-list(skillListData)
 
 block modals

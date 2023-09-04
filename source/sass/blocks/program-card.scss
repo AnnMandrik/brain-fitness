@@ -9,13 +9,12 @@
   align-items: center;
 
   @include vp-374 {
-    min-width: 278px;
+    width: 278px;
     min-height: 392px;
   }
 
   &__pic {
     position: absolute;
-    // width: 520px;
     height: 585px;
     top: 0;
     left: 0;
@@ -30,8 +29,6 @@
     @include vp-374 {
       max-width: 278px;
       max-height: 391px;
-      left: 5%;
-      // right: 50%;
     }
 
     img {

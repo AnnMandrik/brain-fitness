@@ -1,0 +1,19 @@
+mixin intro-program(data = {})
+  - const item = data.item
+  - const textTwo = data.textTwo || false
+  - const textThree = data.textThree  || false
+  - const text = data.text
+
+  .intro-program&attributes(attributes)
+    .container
+      .container__inner
+        h1.visually-hidden Программа
+        .intro-program__wrapper
+          .intro-program__pic
+            +program-card(item)
+          .intro-program__info
+            p.intro-program__text!=`${text}`
+            if textTwo
+              p.intro-program__text!=`${textTwo}`
+            if textThree
+              p.intro-program__text!=`${textThree}`

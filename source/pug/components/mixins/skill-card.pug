@@ -1,0 +1,30 @@
+mixin skill-card(options = {})
+  - const textTwo = options.textTwo || false
+  - const textThree = options.textThree  || false
+  - const text = options.text
+  - const name = options.name
+  - const width = options.width
+  - const height = options.height
+  - const isSquare = options.isSquare  || false
+
+  .skill-card&attributes(attributes)
+    if isSquare
+      .skill-card__wrapper.skill-card__wrapper--square
+        .skill-card__icon
+          +icon(name, width, height)
+        .skill-card__info
+          p.skill-card__text!=`${text}`
+          if textTwo
+            p.skill-card__text!=`${textTwo}`
+          if textThree
+            p.skill-card__text!=`${textThree}`
+    else
+      .skill-card__wrapper
+        .skill-card__icon
+          +icon(name, width, height)
+        .skill-card__info
+          p.skill-card__text!=`${text}`
+          if textTwo
+            p.skill-card__text!=`${textTwo}`
+          if textThree
+            p.skill-card__text!=`${textThree}`

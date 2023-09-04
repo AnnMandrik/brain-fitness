@@ -1,0 +1,58 @@
+.skill-card {
+  &__wrapper {
+    background-color: $color-picton-blue;
+    border-radius: 300px;
+    width: 400px;
+    border: 1px solid $color-default-black;
+    padding: 136px 65px 102px;
+    color: $color-default-black;
+    text-align: center;
+    min-height: 582px;
+
+    @include vp-1023 {
+      max-width: 350px;
+    }
+
+    @include vp-767 {
+      padding: 80px 50px 80px;
+      min-height: 480px;
+    }
+
+    @include vp-374 {
+      padding: 65px 32px 61px;
+      min-height: 417px;
+      max-width: 280px;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 50px;
+  }
+
+  &__info {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.2px;
+
+    @include vp-374 {
+      font-size: 16px;
+      letter-spacing: 0.16px;
+    }
+  }
+
+  &__text:not(:last-child)  {
+    margin-bottom: 24px;
+  }
+
+
+  &__wrapper--square {
+    border-radius: 0;
+    // padding: 80px 30px 0;
+    // min-height: 410px;
+
+    @include vp-767 {
+      display: none;
+    }
+  }
+}

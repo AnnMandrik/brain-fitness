@@ -1,0 +1,37 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "Программа курса Нейрогимнастики" //- на страницах кроме главной используйте О нас — ProjectName
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentUrl = "neurogym.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+
+  -
+    const introData = {
+      item: {
+        href: "#",
+        width: 520,
+        height: 720,
+        image: "neiro",
+      },
+      text: "Программа подбирается индивидуально, <br>после диагностики. <br>Занятия проходят 1-2 раза в&nbsp;неделю.",
+      textTwo: "Стоимость занятий в&nbsp;группе&nbsp;&mdash; 800 рублей <br>( в&nbsp;группе 4-6&nbsp;человек)",
+      textThree: "Стоимость индивидуальных занятий&nbsp;&mdash; 2000 рублей",
+    }
+  -
+    const programData = {
+      title: "Нейрогимнастика",
+      text: "Нейрогимнастика&nbsp;&mdash; это комплекс тренировок для активации мозговой деятельности. Для детей польза заключается в&nbsp;гармоничном развитии мозговых структур и&nbsp;их&nbsp;слаженному взаимодействию.",
+      textTwo: "Наиболее эффективны нейроупражнения в&nbsp;возрасте до&nbsp;восьми лет&nbsp;&mdash; в&nbsp;этот период у&nbsp;детей активно формируются межполушарные связи и&nbsp;закладывается основа интеллекта.",
+      textThree: "Взрослым она поможет наладит работу нервной системы, работу мозга, улучшит запоминание информации,  избавит от тревоги и стресса и сделает более эффективным в работе.",
+    }
+
+block main
+  main
+    +intro-program(introData)
+    +program(programData)
+
+block modals

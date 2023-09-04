@@ -20,8 +20,8 @@
     background-color: $color-midnight-express;
 
     @include vp-767 {
-      min-width: 320px;
-      min-height: 568px;
+      min-width: 100%;
+      height: auto;
     }
 
     img {
@@ -31,8 +31,8 @@
       width: 100%;
 
       @include vp-374 {
-        min-width: 320px;
-        min-height: 568px;
+        // min-width: 320px;
+        max-height: 568px;
         height: auto;
       }
     }
