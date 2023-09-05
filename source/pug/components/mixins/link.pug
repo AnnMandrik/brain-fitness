@@ -1,0 +1,30 @@
+//- mixin link(href, text)
+//-   a(href=href class!=attributes.class).link&attributes(attributes)!=text
+
+mixin link(options = {})
+  -
+    const {href, text, color, iconData, iconDataReverse, picData} = options;
+    const tag = href ? "a" : "button";
+    const type = options.type || tag === "button" ? options.type || "button" : false;
+    const target = options.isExternal ? "_blank" : false;
+    const rel = options.isExternal ? "nofollow noopener noreferrer" : false;
+    const {iconName, width, height}= iconData ? iconData : "";
+    const {name, iconWidth, iconHeight}= iconDataReverse ? iconDataReverse : "";
+    const hasWrapper = options.hasWrapper || false;
+    const {picName}= picData ? picData : "";
+
+  #{tag}.link(href=href, target=target, rel=rel, type=type)&attributes(attributes)
+    if iconData
+      block
+      if hasWrapper
+        span.link__text!= text
+      else
+        != text
+      +icon(iconName, width, height)
+    else if iconDataReverse
+      +icon(name, iconWidth, iconHeight)
+      != text
+    else
+      != text
+    if picData
+      +picture("content", picName, "png", 46, 46, "Иконка", isLoadingLazy)

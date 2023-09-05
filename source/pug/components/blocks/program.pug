@@ -12,13 +12,12 @@ mixin program(data = {})
         .program__info
           p.program__text!=`${text}`
           if textTwo
-            if list
-              ul.program__list
-              li.program__item самосознание,
-              li.program__item самоконтроль,
-              li.program__item социальную чуткость,
-              li.program__item управление отношениями.
-            else
-              p.program__text!=`${textTwo}`
+            p.program__text!=`${textTwo}`
+              if list
+                ul.program__list
+                  li.program__item самосознание,
+                  li.program__item самоконтроль,
+                  li.program__item социальную чуткость,
+                  li.program__item управление отношениями.
           if textThree
             p.program__text!=`${textThree}`

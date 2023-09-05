@@ -10,15 +10,11 @@
   }
 
   &__wrapper {
-    // margin-top: 65px;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 100px;
     margin: 0 auto;
 
-    // @include vp-1279 {
-    //   gap: 0;
-    // }
 
     @include vp-1023 {
       grid-template-columns: 1fr;
@@ -32,6 +28,9 @@
   }
 
   &__pic {
+    cursor: default;
+    pointer-events: none;
+
     @include vp-1023 {
       justify-self: center;
     }
@@ -66,6 +65,14 @@
   br {
     @include vp-1023 {
       display: none;
+    }
+  }
+
+  &__mental {
+    br {
+      @include vp-1023 {
+        display: inline-block;
+      }
     }
   }
 }

@@ -1,0 +1,38 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "Программа курса Психологии" //- на страницах кроме главной используйте О нас — ProjectName
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentUrl = "psychology.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+
+  -
+    const introData = {
+      item: {
+        href: "#",
+        width: 520,
+        height: 720,
+        image: "psicho",
+      },
+      text: "Вы&nbsp;можете записаться на&nbsp;индивидуальную консультацию или оставить заявку на&nbsp;участие в&nbsp;online группе, offline группе.",
+      textTwo: "Участие в&nbsp;группе offline&nbsp;&mdash; 1000 рублей",
+      textThree: "Участие в&nbsp;группе online&nbsp;&mdash; 700 рублей",
+      textFour: "Индивидуальная консультация&nbsp;&mdash; 2000 рублей",
+    }
+  -
+    const programData = {
+      title: "Психология",
+      text: "Психология изучает психику человека на&nbsp;основе взаимодействия людей с&nbsp;окружающей средой. В&nbsp;поле внимания психологии попадают межличностные отношения, реакции на&nbsp;те&nbsp;или иные события в&nbsp;жизни человека или группы людей, последствия взаимодействия с&nbsp;объектами окружающей среды.",
+      textTwo: "Зачем нужна психология?",
+      textThree: "Знание психологии играет важную роль в&nbsp;жизни общества и&nbsp;человека, делает жизнь ярче, успешнее и&nbsp;счастливее, помогает человеку реализовать свои возможности, лучше познать себя и&nbsp;окружающих, стать увереннее в&nbsp;себе, овладеть на&nbsp;высоком уровне коммуникативными навыками, эффективно решать производственные и&nbsp;личностные проблемы.",
+    }
+
+block main
+  main
+    +intro-program(introData)
+    +program(programData)
+
+block modals

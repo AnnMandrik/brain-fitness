@@ -2,6 +2,7 @@ mixin intro-program(data = {})
   - const item = data.item
   - const textTwo = data.textTwo || false
   - const textThree = data.textThree  || false
+  - const textFour = data.textFour  || false
   - const text = data.text
 
   .intro-program&attributes(attributes)
@@ -17,3 +18,5 @@ mixin intro-program(data = {})
               p.intro-program__text!=`${textTwo}`
             if textThree
               p.intro-program__text!=`${textThree}`
+            if textFour
+              p.intro-program__text!=`${textFour}`

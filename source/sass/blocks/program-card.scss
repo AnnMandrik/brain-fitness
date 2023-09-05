@@ -54,9 +54,12 @@
     position: relative;
   }
 
-  @include hover-focus {
-    .btn {
-      opacity: 0.7;
-    }
+  .btn {
+    opacity: 1;
+    transition: opacity $trans-default;
+
+   @include hover-focus {
+    opacity: 0.6;
+  }
   }
 }

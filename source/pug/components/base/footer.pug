@@ -1,3 +1,26 @@
 mixin footer(footerMods)
   footer.footer(class=footerMods)
     .container
+      .container__inner
+        .footer__wrapper
+          .footer__logo-block
+            a.footer__logo(href="index.html", aria-label="Переход на главную")
+              +picture-adaptive("content", "logo", "png", 193, 57, "Лого", isLoadingLazy)
+          ul.footer__social-list
+            li.footer__social-item
+              +link({href: "https://wa.me/+79673415878", picData: {picName: "icon-WA"}, isExternal: true,})
+            li.footer__social-item
+              +link({href: "https://t.me/successful_kids", picData: {picName: "icon-TG"}, isExternal: true,})
+            li.footer__social-item
+              +link({href: "https://vk.com/enb87", picData: {picName: "icon-VK"}, isExternal: true,})
+          .footer__contacts
+            p Контакты
+            ul.footer__contacts-list
+              li.footer__contacts-item
+                +link({href: "mailto:yatendy1@gmail.com", text: "yatendy1@gmail.com"})
+              li.footer__contacts-item
+                +link({href: "tel:+79673415878", text: "+7 (967)341-58-78"})
+          .footer__program
+            a(href="#program", aria-label="Переход на главную") Программы
+    .footer__bottom
+      p.footer__copyright © 2023, Все&nbsp;права&nbsp;защищены

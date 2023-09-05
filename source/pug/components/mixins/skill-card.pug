@@ -11,7 +11,7 @@ mixin skill-card(options = {})
     if isSquare
       .skill-card__wrapper.skill-card__wrapper--square
         .skill-card__icon
-          +icon(name, width, height)
+          +picture-adaptive("content/icons", name, "png", width, height, "", isLoadingLazy)
         .skill-card__info
           p.skill-card__text!=`${text}`
           if textTwo
@@ -21,7 +21,7 @@ mixin skill-card(options = {})
     else
       .skill-card__wrapper
         .skill-card__icon
-          +icon(name, width, height)
+          +picture-adaptive("content/icons", name, "png", width, height, "", isLoadingLazy)
         .skill-card__info
           p.skill-card__text!=`${text}`
           if textTwo
