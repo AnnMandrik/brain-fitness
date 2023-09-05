@@ -9,7 +9,7 @@
     @include vp-374 {
       margin: 0;
       min-width: 320px;
-      min-height: 568px;
+      min-height: 652px;
     }
   }
 
@@ -47,7 +47,7 @@
 
 
     @include vp-374 {
-      margin-top: auto;
+      margin: 0 auto 60px;
     }
 
   }

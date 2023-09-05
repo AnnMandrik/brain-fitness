@@ -19,6 +19,9 @@ html {
   font-family: $ff-montserrat;
   color: $color-default-white;
 
+  overflow-wrap: break-word;
+  scroll-behavior: smooth;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   // оптимизация выравнивания шрифта относительно центра строки

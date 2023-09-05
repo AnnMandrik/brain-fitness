@@ -39,4 +39,11 @@
 <path d="M0.5 23C0.5 10.2975 10.7975 0 23.5 0C36.2025 0 46.5 10.2975 46.5 23C46.5 35.7025 36.2025 46 23.5 46C10.7975 46 0.5 35.7025 0.5 23Z" fill="#869BDF" fill-opacity="0.14"/>
 <path d="M1 23C1 10.5736 11.0736 0.5 23.5 0.5C35.9264 0.5 46 10.5736 46 23C46 35.4264 35.9264 45.5 23.5 45.5C11.0736 45.5 1 35.4264 1 23Z" stroke="#535488" stroke-opacity="0.4"/>
 
+</g></symbol><symbol id="icon-burger" viewBox="0 0 35 20"><g fill="none">
+<path d="M0 1H35" stroke="currentColor" stroke-width="2"/>
+<path d="M0 10H35" stroke="currentColor" stroke-width="2"/>
+<path d="M0 19H35" stroke="currentColor" stroke-width="2"/>
+</g></symbol><symbol id="icon-cross" viewBox="0 0 28 27"><g fill="none">
+<path d="M1 1L25.7487 25.7487" stroke="currentColor" stroke-width="2"/>
+<path d="M26.623 1L1.87431 25.7487" stroke="currentColor" stroke-width="2"/>
 </g></symbol></svg>

@@ -60,11 +60,55 @@
 <path d="M0.5 23C0.5 10.2975 10.7975 0 23.5 0C36.2025 0 46.5 10.2975 46.5 23C46.5 35.7025 36.2025 46 23.5 46C10.7975 46 0.5 35.7025 0.5 23Z" fill="#869BDF" fill-opacity="0.14"/>
 <path d="M1 23C1 10.5736 11.0736 0.5 23.5 0.5C35.9264 0.5 46 10.5736 46 23C46 35.4264 35.9264 45.5 23.5 45.5C11.0736 45.5 1 35.4264 1 23Z" stroke="#535488" stroke-opacity="0.4"/>
 
+</g></symbol><symbol id="icon-burger" viewBox="0 0 35 20"><g fill="none">
+<path d="M0 1H35" stroke="currentColor" stroke-width="2"/>
+<path d="M0 10H35" stroke="currentColor" stroke-width="2"/>
+<path d="M0 19H35" stroke="currentColor" stroke-width="2"/>
+</g></symbol><symbol id="icon-cross" viewBox="0 0 28 27"><g fill="none">
+<path d="M1 1L25.7487 25.7487" stroke="currentColor" stroke-width="2"/>
+<path d="M26.623 1L1.87431 25.7487" stroke="currentColor" stroke-width="2"/>
 </g></symbol></svg>
     </div>
     <div class="wrapper">
       <header class="header">
-        <div class="container"></div>
+        <div class="container">
+          <div class="header__wrapper"><a class="header__logo" href="index.html" aria-label="Переход на главную">
+              <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/content/logo-mobile.webp, img/content/logo-mobile@2x.webp 2x">
+                <source media="(max-width: 767px)" srcset="img/content/logo-mobile.png 1x,img/content/logo-mobile@2x.png 2x">
+                <source type="image/webp" srcset="img/content/logo.webp, img/content/logo@2x.webp 2x"><img src="img/content/logo.png" srcset="img/content/logo@2x.png 2x" width="193" height="57" alt="Лого">
+              </picture></a>
+            <button class="header__nav-toggle" type="button" aria-label="Открыть меню" aria-pressed="false" data-nav-toggle><span class="header__icon header__icon--open">
+                <svg width="35" height="20" aria-hidden="true">
+                  <use xlink:href="#icon-burger"></use>
+                </svg></span><span class="header__icon header__icon--close">
+                <svg width="28" height="27" aria-hidden="true">
+                  <use xlink:href="#icon-cross"></use>
+                </svg></span></button>
+            <nav class="main-nav" data-fix-block>
+              <div class="main-nav__wrapper">
+                <ul class="main-nav__list" data-destroy="(max-width: 1023px)">
+                  <li class="main-nav__item">
+                    <a class="link main-nav__link" href="index.html">Главная
+                    </a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="link main-nav__link" href="index.html#program">Программы
+                    </a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a class="link main-nav__link" href="index.html#contacts">Контакты
+                    </a>
+                  </li>
+                </ul>
+                <a class="link main-nav__tel" href="tel:+79673415878">+7 (967)341-58-78
+                </a>
+                <a class="link main-nav__email" href="mailto:yatendy1@gmail.com">yatendy1@gmail.com
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
       </header>
       <main>
         <div class="intro-program">
@@ -144,20 +188,20 @@
                   </a>
                 </li>
               </ul>
-              <div class="footer__contacts">
+              <div class="footer__contacts" id="contacts">
                 <p>Контакты</p>
                 <ul class="footer__contacts-list">
-                  <li class="footer__contacts-item">
-                    <a class="link" href="mailto:yatendy1@gmail.com">yatendy1@gmail.com
-                    </a>
-                  </li>
                   <li class="footer__contacts-item">
                     <a class="link" href="tel:+79673415878">+7 (967)341-58-78
                     </a>
                   </li>
+                  <li class="footer__contacts-item">
+                    <a class="link" href="mailto:yatendy1@gmail.com">yatendy1@gmail.com
+                    </a>
+                  </li>
                 </ul>
               </div>
-              <div class="footer__program"><a href="#program" aria-label="Переход на главную">Программы</a></div>
+              <div class="footer__program"><a href="#program" aria-label="Переход к программам">Программы</a></div>
             </div>
           </div>
         </div>

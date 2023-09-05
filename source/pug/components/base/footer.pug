@@ -13,14 +13,14 @@ mixin footer(footerMods)
               +link({href: "https://t.me/successful_kids", picData: {picName: "icon-TG"}, isExternal: true,})
             li.footer__social-item
               +link({href: "https://vk.com/enb87", picData: {picName: "icon-VK"}, isExternal: true,})
-          .footer__contacts
+          .footer__contacts(id="contacts")
             p Контакты
             ul.footer__contacts-list
               li.footer__contacts-item
-                +link({href: "mailto:yatendy1@gmail.com", text: "yatendy1@gmail.com"})
-              li.footer__contacts-item
                 +link({href: "tel:+79673415878", text: "+7 (967)341-58-78"})
+              li.footer__contacts-item
+                +link({href: "mailto:yatendy1@gmail.com", text: "yatendy1@gmail.com"})
           .footer__program
-            a(href="#program", aria-label="Переход на главную") Программы
+            a(href="#program", aria-label="Переход к программам") Программы
     .footer__bottom
       p.footer__copyright © 2023, Все&nbsp;права&nbsp;защищены

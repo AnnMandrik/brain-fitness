@@ -1,37 +1,33 @@
 mixin header(headerMods, currentUrl)
-  //- -
-  //-   const headerLinks = [
-  //-     {
-  //-       href: "index.html",
-  //-       text: "Главная"
-  //-     },
-  //-     {
-  //-       href: "#",
-  //-       text: "Страница 2"
-  //-     },
-  //-     {
-  //-       href: "#",
-  //-       text: "Страница 3"
-  //-     },
-  //-   ]
+  -
+    const headerLinks = [
+      {
+        href: "index.html",
+        text: "Главная"
+      },
+      {
+        href: "index.html#program",
+        text: "Программы"
+      },
+      {
+        href: "index.html#contacts",
+        text: "Контакты"
+      },
+    ]
 
   header.header(class=headerMods)
     .container
-      //- if(currentUrl === "index.html")
-      //-   //- lighthouse снимает 10 баллов SEO за <a> без href
-      //-   img(src="img/svg/logo.svg" width="193" alt="Логотип проекта")
-      //- else
-      //-   a.header__logo(href="index.html", aria-label="Переход на главную") Логотип
-      //-     img(src="img/svg/logo.svg" width="193" alt="Логотип проекта")
-      //- nav.main-nav
-      //-   button.main-nav__toggle.btn-reset(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
-      //-     +icon("icon-burger", 20, 20)
-      //-   .main-nav__wrapper
-      //-     ul.main-nav__list
-      //-       each link in headerLinks
-      //-         - const activeState = currentUrl === link.href
-      //-         li.main-nav__item
-      //-           if(activeState)
-      //-             span.main-nav__link.is-active=link.text
-      //-           else
-      //-             a.main-nav__link(href=link.href)=link.text
+      .header__wrapper
+        if(currentUrl === "index.html")
+          //- lighthouse снимает 10 баллов SEO за <a> без href
+          span.header__logo
+            +picture-adaptive("content", "logo", "png", 193, 57, "Лого", isLoadingLazy)
+        else
+          a.header__logo(href="index.html", aria-label="Переход на главную")
+            +picture-adaptive("content", "logo", "png", 193, 57, "Лого", isLoadingLazy)
+        button.header__nav-toggle(type="button", aria-label="Открыть меню", aria-pressed="false", data-nav-toggle)
+          span.header__icon.header__icon--open
+            +icon("icon-burger", 35, 20)
+          span.header__icon.header__icon--close
+            +icon("icon-cross", 28, 27)
+        +main-nav(headerLinks)
