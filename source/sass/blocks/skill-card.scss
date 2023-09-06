@@ -9,17 +9,28 @@
     text-align: center;
     min-height: 582px;
 
-    @include vp-1023 {
-      max-width: 350px;
+    @include vp-1439 {
+      // max-width: 350px;
+      // padding: 80px 50px 80px;
+      // min-height: 480px;
+      margin: 0 auto;
+
+      padding: 65px 32px 61px;
+      min-height: 417px;
+      max-width: 280px;
     }
+
+    // @include vp-1023 {
+    //   max-width: 350px;
+    // }
+
+    // @include vp-767 {
+    //   padding: 80px 50px 80px;
+    //   min-height: 480px;
+    //   margin: 0 auto;
+    // }
 
     @include vp-767 {
-      padding: 80px 50px 80px;
-      min-height: 480px;
-      margin: 0 auto;
-    }
-
-    @include vp-374 {
       padding: 65px 32px 61px;
       min-height: 417px;
       max-width: 280px;
@@ -41,7 +52,7 @@
     line-height: normal;
     letter-spacing: 0.2px;
 
-    @include vp-374 {
+    @include vp-1439 {
       font-size: 16px;
       letter-spacing: 0.16px;
     }
@@ -55,7 +66,7 @@
   &__wrapper--square {
     border-radius: 0;
 
-    @include vp-767 {
+    @include vp-1023 {
       display: none;
     }
   }

@@ -1,6 +1,6 @@
 .intro-program {
   .container__inner {
-    margin-top: 280px;
+    margin-top: 260px;
     margin-left: 52px;
     margin-right: 52px;
 
@@ -14,11 +14,21 @@
     }
   }
 
+  .program-card {
+    margin: 0 auto;
+  }
+
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 100px;
     margin: 0 auto;
+
+    @include vp-1439 {
+      // grid-template-columns: 1fr;
+      gap: 70px;
+      justify-content: center;
+    }
 
 
     @include vp-1023 {
@@ -27,20 +37,22 @@
       justify-content: center;
     }
 
-    @include vp-767 {
-      gap: 50px;
-    }
+    // @include vp-767 {
+    //   gap: 50px;
+    // }
 
     @include vp-374 {
       margin: 0;
       // min-width: 320px;
       min-height: 652px;
+      gap: 50px;
     }
   }
 
   &__pic {
     cursor: default;
     pointer-events: none;
+    align-self: center;
 
     @include vp-1023 {
       justify-self: center;
@@ -54,12 +66,18 @@
     letter-spacing: 0.24px;
     margin: auto;
 
-    @include vp-767 {
-      font-size: 20px;
-      line-height: 40px;
+    @include vp-1439 {
+      font-size: 22px;
+      line-height: 45px;
     }
 
-    @include vp-374 {
+    @include vp-1023 {
+      font-size: 20px;
+      line-height: 40px;
+      // padding-left: 20px;
+    }
+
+    @include vp-767 {
       font-size: 18px;
       line-height: 30px;
     }
@@ -67,6 +85,14 @@
 
   &__text:not(:last-child)  {
     margin-bottom: 50px;
+
+    @include vp-1439 {
+      margin-bottom: 45px;
+    }
+
+    @include vp-1023 {
+      margin-bottom: 40px;
+    }
 
     @include vp-767 {
       margin-bottom: 30px;

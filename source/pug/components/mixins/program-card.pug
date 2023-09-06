@@ -10,4 +10,4 @@ mixin program-card(options = {})
       .program-card__pic
         +picture-adaptive("content/program", image, "jpg", width, height, "", isLoadingLazy)
       if btn
-        +btn({href: options.href, text: btnText}).program-card__btn
+        +btn({tag:"button", text: btnText}).program-card__btn

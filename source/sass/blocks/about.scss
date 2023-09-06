@@ -35,9 +35,24 @@
     line-height: 52px;
     letter-spacing: 0.28px;
 
-    @include vp-767 {
+    @include vp-1439 {
+      font-size: 26px;
+      line-height: 40px;
+    }
+
+    @include vp-1279 {
       font-size: 20px;
       line-height: 40px;
+    }
+
+    @include vp-1023 {
+      font-size: 20px;
+      // line-height: 40px;
+    }
+
+    @include vp-767 {
+      font-size: 18x;
+      line-height: 35px;
     }
 
     @include vp-374 {
@@ -60,19 +75,23 @@
     min-height: 526px;
     margin: auto;
 
-    @include vp-767 {
+    @include vp-1023 {
       min-width: 350px;
       min-height: 375px;
+      max-width: 350px;
+      max-height: 375px;
     }
 
-    @include vp-374 {
+    @include vp-767 {
       min-width: 203px;
       min-height: 243px;
     }
 
     img {
-      @include vp-767 {
+      @include vp-1023 {
         width: 100%;
+        max-width: 350px;
+        max-height: 375px;
       }
     }
   }

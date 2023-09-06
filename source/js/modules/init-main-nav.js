@@ -53,6 +53,11 @@ const onDocumentClick = (evt) => {
   if (!evt.target.closest('.header__wrapper')) {
     closeMenu();
   }
+
+  if (!evt.target.closest('.header__wrapper a')) {
+    closeMenu();
+  }
+
   // кнопка закрытия
   if (breakpoint.matches && evt.target.closest('[data-nav-toggle]')) {
     if (header.classList.contains('is-opened')) {

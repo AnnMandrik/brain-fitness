@@ -8,7 +8,7 @@
   justify-content: end;
   align-items: center;
 
-  @include vp-374 {
+  @include vp-1439 {
     width: 278px;
     min-height: 392px;
   }
@@ -21,15 +21,17 @@
     border-radius: 10px;
     background-color: $color-midnight-express;
 
-    @include vp-767 {
+    @include vp-1439 {
       min-width: 278px;
       min-height: 392px;
-    }
-
-    @include vp-374 {
       max-width: 278px;
       max-height: 391px;
     }
+
+    // @include vp-374 {
+    //   max-width: 278px;
+    //   max-height: 391px;
+    // }
 
     img {
       border-radius: 50px;
@@ -37,17 +39,19 @@
       object-fit: cover;
       align-self: center;
 
-      @include vp-767 {
+      @include vp-1439 {
         min-width: 278px;
         min-height: 392px;
         width: auto;
-      }
-
-      @include vp-374 {
         max-width: 278px;
         min-height: 391px;
       }
     }
+
+      // @include vp-374 {
+      //   max-width: 278px;
+      //   min-height: 391px;
+      // }
   }
 
   &__btn {

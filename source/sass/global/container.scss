@@ -16,6 +16,10 @@
   margin-left: 35px;
   margin-right: 35px;
 
+  @include vp-1439 {
+    margin-top: 160px;
+  }
+
   @include vp-1023 {
     margin-top: 85px;
   }
