@@ -6,6 +6,15 @@
     flex-direction: column;
     justify-content: flex-end;
 
+    @include vp-1439 {
+      min-height: 700px;
+    }
+
+
+    @include vp-767 {
+      min-height: 979px;
+    }
+
     @include vp-374 {
       margin: 0;
       min-width: 320px;
@@ -30,6 +39,14 @@
       object-fit: cover;
       width: 100%;
 
+      @include vp-1439 {
+        min-height: 700px;
+      }
+
+      @include vp-767 {
+        min-height: 979px;
+      }
+
       @include vp-374 {
         // min-width: 320px;
         max-height: 568px;
@@ -45,6 +62,13 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @include vp-1023 {
+      margin-bottom: 120px;
+    }
+
+    @include vp-767 {
+      margin: auto;
+    }
 
     @include vp-374 {
       margin: 0 auto 0px;
@@ -111,15 +135,16 @@
     padding: 0 20px;
 
     @include vp-1439 {
-      font-size: 28px;
-      line-height: 38px;
+      margin-top: 30px;
+      font-size: 24px;
+      line-height: 32px;
     }
 
     @include vp-1023 {
       font-size: 22px;
       line-height: 28px;
       letter-spacing: 0.16px;
-      margin-top: 40px;
+      margin-top: 20px;
     }
 
     @include vp-767 {

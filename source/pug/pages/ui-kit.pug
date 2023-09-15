@@ -120,6 +120,8 @@ block main
         li.header-ui__inner-item
           a.header-ui__inner-link(href="#skill-card", data-navigation-link) Skill-card
         li.header-ui__inner-item
+          a.header-ui__inner-link(href="#review", data-navigation-link) Review
+        li.header-ui__inner-item
           a.header-ui__inner-link(href="#modals", data-navigation-link) Modals
         li.header-ui__inner-item
           a.header-ui__inner-link(href="#buttons", data-navigation-link) Buttons
@@ -138,14 +140,33 @@ block main
           pre +program-card({href: "#", image: "emotion", width: "375px", height: "585px", btn: true, btnText: "Эмоциональный интеллект"})
       section(id="skill-card")
         h2 Skill-card
-        +skill-card({name: "icon-logika", width: 96, height: 90, text: "Умение быстро решать задачи", textTwo: "тренировка навыка &laquo;находить выход из&nbsp;любой ситуации&raquo;", textThree: "скорость реакции"})
+        +skill-card({
+          name: "logika",
+          width: 98,
+          height: 93,
+          text: "Умение быстро решать задачи",
+          textTwo: "тренировка навыка &laquo;находить выход из&nbsp;любой ситуации&raquo;",
+          textThree: "скорость реакции",
+        })
         p Пример вызова
         code
-          pre +skill-card({name: "icon-logika", width: "96", height: "90", text: "Умение быстро решать задачи", textTwo: "тренировка навыка &laquo;находить выход из&nbsp;любой ситуации&raquo;", textThree: "скорость реакции"})
-        +skill-card({name: "icon-emotional", width: "77", height: "84", text: "Самообладание", textTwo: "Распознавание и&nbsp;контроль эмоций", isSquare: true})
+          pre +skill-card({name: "logika", width: 98, height: 93, text: "Умение быстро решать задачи", textTwo: "тренировка навыка &laquo;находить выход из&nbsp;любой ситуации&raquo;", textThree: "скорость реакции"})
+        +skill-card( {
+          name: "psihologiya",
+          width: 96,
+          height: 97,
+          text: "Мышление:",
+          textTwo: "понимание<br>запоминание<br>анализ<br>оценка<br>синтез<br>применение",
+        })
         p Пример вызова
         code
-          pre +skill-card({name: "icon-emotional", width: "77", height: "84", text: "Самообладание", textTwo: "Распознавание и&nbsp;контроль эмоций", isSquare: true})
+          pre +skill-card( {name: "psihologiya", width: 96, height: 97, text: "Мышление:", textTwo: "понимание<br>запоминание<br>анализ<br>оценка<br>синтез<br>применение"})
+      section(id="review")
+        h2 Review
+        +review({name: "AB", userName: "Аня Барусина", descriptionText: "Наталья Борисовна&nbsp;&mdash; прекрасный педагог. К&nbsp;каждому ребенку находит свой подход. Детки её&nbsp;очень любят и&nbsp;занимаются с&nbsp;большим удовольствием. Мой ребёнок за&nbsp;время учебы подтянулась по&nbsp;предметам и&nbsp;стала более внимательна во&nbsp;всём. Плюс, в&nbsp;нашем случае, Наталья смогла найти психологический подход к&nbsp;ней, что моя дочь начала расскрываться с&nbsp;каждым разом все больше и&nbsp;больше. Огромное спасибо ей&nbsp;за&nbsp;проделанную работу. А&nbsp;уроки всегда интересные, позновательные и&nbsp;полезные!"})
+        p Пример вызова
+        code
+          pre +review({href: "#", image: "emotion", width: "375px", height: "585px", btn: true, btnText: "Эмоциональный интеллект"})
       section(id="modals")
       section(id="modals")
       section(id="modals")

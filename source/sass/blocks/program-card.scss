@@ -28,11 +28,6 @@
       max-height: 391px;
     }
 
-    // @include vp-374 {
-    //   max-width: 278px;
-    //   max-height: 391px;
-    // }
-
     img {
       border-radius: 50px;
       height: 100%;
@@ -47,11 +42,6 @@
         min-height: 391px;
       }
     }
-
-      // @include vp-374 {
-      //   max-width: 278px;
-      //   min-height: 391px;
-      // }
   }
 
   &__btn {

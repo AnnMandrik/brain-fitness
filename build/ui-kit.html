@@ -181,6 +181,7 @@
           <ul class="header-ui__inner-list">
             <li class="header-ui__inner-item"><a class="header-ui__inner-link" href="#program-card" data-navigation-link>Program-card</a></li>
             <li class="header-ui__inner-item"><a class="header-ui__inner-link" href="#skill-card" data-navigation-link>Skill-card</a></li>
+            <li class="header-ui__inner-item"><a class="header-ui__inner-link" href="#review" data-navigation-link>Review</a></li>
             <li class="header-ui__inner-item"><a class="header-ui__inner-link" href="#modals" data-navigation-link>Modals</a></li>
             <li class="header-ui__inner-item"><a class="header-ui__inner-link" href="#buttons" data-navigation-link>Buttons</a></li>
             <li class="header-ui__inner-item"><a class="header-ui__inner-link" href="#form-elements" data-navigation-link>Form elements</a></li>
@@ -210,9 +211,9 @@
               <div class="skill-card__wrapper">
                 <div class="skill-card__icon">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/icons/icon-logika-mobile.webp, img/content/icons/icon-logika-mobile@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/content/icons/icon-logika-mobile.png 1x,img/content/icons/icon-logika-mobile@2x.png 2x">
-                    <source type="image/webp" srcset="img/content/icons/icon-logika.webp, img/content/icons/icon-logika@2x.webp 2x"><img src="img/content/icons/icon-logika.png" srcset="img/content/icons/icon-logika@2x.png 2x" width="96" height="90" alt="">
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/icons/logika-mobile.webp, img/content/icons/logika-mobile@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/content/icons/logika-mobile.png 1x,img/content/icons/logika-mobile@2x.png 2x">
+                    <source type="image/webp" srcset="img/content/icons/logika.webp, img/content/icons/logika@2x.webp 2x"><img src="img/content/icons/logika.png" srcset="img/content/icons/logika@2x.png 2x" width="98" height="93" alt="">
                   </picture>
                 </div>
                 <div class="skill-card__info">
@@ -223,24 +224,46 @@
               </div>
             </div>
             <p>Пример вызова</p><code>
-              <pre>+skill-card({name: "icon-logika", width: "96", height: "90", text: "Умение быстро решать задачи", textTwo: "тренировка навыка &laquo;находить выход из&nbsp;любой ситуации&raquo;", textThree: "скорость реакции"})</pre></code>
+              <pre>+skill-card({name: "logika", width: 98, height: 93, text: "Умение быстро решать задачи", textTwo: "тренировка навыка &laquo;находить выход из&nbsp;любой ситуации&raquo;", textThree: "скорость реакции"})</pre></code>
             <div class="skill-card">
-              <div class="skill-card__wrapper skill-card__wrapper--square">
+              <div class="skill-card__wrapper">
                 <div class="skill-card__icon">
                   <picture>
-                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/icons/icon-emotional-mobile.webp, img/content/icons/icon-emotional-mobile@2x.webp 2x">
-                    <source media="(max-width: 767px)" srcset="img/content/icons/icon-emotional-mobile.png 1x,img/content/icons/icon-emotional-mobile@2x.png 2x">
-                    <source type="image/webp" srcset="img/content/icons/icon-emotional.webp, img/content/icons/icon-emotional@2x.webp 2x"><img src="img/content/icons/icon-emotional.png" srcset="img/content/icons/icon-emotional@2x.png 2x" width="77" height="84" alt="">
+                    <source type="image/webp" media="(max-width: 767px)" srcset="img/content/icons/psihologiya-mobile.webp, img/content/icons/psihologiya-mobile@2x.webp 2x">
+                    <source media="(max-width: 767px)" srcset="img/content/icons/psihologiya-mobile.png 1x,img/content/icons/psihologiya-mobile@2x.png 2x">
+                    <source type="image/webp" srcset="img/content/icons/psihologiya.webp, img/content/icons/psihologiya@2x.webp 2x"><img src="img/content/icons/psihologiya.png" srcset="img/content/icons/psihologiya@2x.png 2x" width="96" height="97" alt="">
                   </picture>
                 </div>
                 <div class="skill-card__info">
-                  <p class="skill-card__text">Самообладание</p>
-                  <p class="skill-card__text">Распознавание и&nbsp;контроль эмоций</p>
+                  <p class="skill-card__text">Мышление:</p>
+                  <p class="skill-card__text">понимание<br>запоминание<br>анализ<br>оценка<br>синтез<br>применение</p>
                 </div>
               </div>
             </div>
             <p>Пример вызова</p><code>
-              <pre>+skill-card({name: "icon-emotional", width: "77", height: "84", text: "Самообладание", textTwo: "Распознавание и&nbsp;контроль эмоций", isSquare: true})</pre></code>
+              <pre>+skill-card( {name: "psihologiya", width: 96, height: 97, text: "Мышление:", textTwo: "понимание<br>запоминание<br>анализ<br>оценка<br>синтез<br>применение"})</pre></code>
+          </section>
+          <section id="review">
+            <h2>Review</h2>
+            <div class="review">
+              <div class="review__wrapper">
+                <div class="review__user">
+                  <div class="review__user-avatar">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/slides/AB-mobile.webp, img/slides/AB-mobile@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/slides/AB-mobile.png 1x,img/slides/AB-mobile@2x.png 2x">
+                      <source type="image/webp" srcset="img/slides/AB.webp, img/slides/AB@2x.webp 2x"><img src="img/slides/AB.png" srcset="img/slides/AB@2x.png 2x" width="60" height="60" alt="">
+                    </picture>
+                  </div>
+                  <div class="review__user-data"><span>от кого:</span><span class="review__user-name">Аня Барусина</span></div>
+                </div>
+                <div class="review__description">
+                  <p>Наталья Борисовна&nbsp;&mdash; прекрасный педагог. К&nbsp;каждому ребенку находит свой подход. Детки её&nbsp;очень любят и&nbsp;занимаются с&nbsp;большим удовольствием. Мой ребёнок за&nbsp;время учебы подтянулась по&nbsp;предметам и&nbsp;стала более внимательна во&nbsp;всём. Плюс, в&nbsp;нашем случае, Наталья смогла найти психологический подход к&nbsp;ней, что моя дочь начала расскрываться с&nbsp;каждым разом все больше и&nbsp;больше. Огромное спасибо ей&nbsp;за&nbsp;проделанную работу. А&nbsp;уроки всегда интересные, позновательные и&nbsp;полезные!</p>
+                </div>
+              </div>
+            </div>
+            <p>Пример вызова</p><code>
+              <pre>+review({href: "#", image: "emotion", width: "375px", height: "585px", btn: true, btnText: "Эмоциональный интеллект"})</pre></code>
           </section>
           <section id="modals"></section>
           <section id="modals"></section>

@@ -1,0 +1,15 @@
+mixin review(options = {})
+  - const userName = options.userName || "Неопознанный енот";
+  - const descriptionText = options.descriptionText || "Отсутствует описание";
+  - const classMods = options.classMods || false
+
+  .review(class=classMods)&attributes(attributes)
+    .review__wrapper
+      .review__user
+        .review__user-avatar
+          +picture-adaptive("slides", options.name, "png", 60, 60, "", isLoadingLazy)
+        .review__user-data
+          span от кого:
+          span.review__user-name!= userName
+      .review__description
+        p!=descriptionText
