@@ -54,7 +54,7 @@ const onDocumentClick = (evt) => {
     closeMenu();
   }
 
-  if (!evt.target.closest('.header__wrapper a')) {
+  if (evt.target.closest('.header__wrapper a')) {
     closeMenu();
   }
 

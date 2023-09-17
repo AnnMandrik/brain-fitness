@@ -4,13 +4,6 @@
     transition: transform $trans-default;
   }
 
-  margin: 12px 0 0 auto;
-  transition: margin-top $trans-600;
-
-  // @include vp-1279 {
-  //   margin-top: 6px;
-  // }
-
   @include vp-767 {
     position: absolute;
     top: 0;
@@ -24,8 +17,6 @@
     @include hide-up;
 
     max-height: 100vh;
-    /* stylelint-disable-next-line */
-    max-height: calc(100 * var(--vh, 1vh));
 
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
@@ -40,12 +31,14 @@
 
   &__wrapper {
     display: flex;
+    height: 100%;
+    align-items: center;
 
     @include vp-767 {
       flex-direction: column;
-      justify-content: flex-start;
       padding: 15px 20px 150px;
       background-color: $color-midnight-express;
+      align-items: flex-start;
     }
   }
 
@@ -66,7 +59,7 @@
 
   &__item {
     position: relative;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
 
     @include vp-767 {
       display: flex;
