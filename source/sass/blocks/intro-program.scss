@@ -4,14 +4,19 @@
     margin-left: 52px;
     margin-right: 52px;
 
+    @include vp-1023 {
+      margin-top: 200px;
+    }
+
     @include vp-767 {
+      margin-top: 150px;
       margin-left: 0;
       margin-right: 0;
     }
 
-    @include vp-500 {
-      margin-top: 250px;
-    }
+    // @include vp-500 {
+    //   margin-top: 150px;
+    // }
   }
 
   .program-card {
@@ -25,27 +30,21 @@
     margin: 0 auto;
 
     @include vp-1439 {
-      // grid-template-columns: 1fr;
       gap: 70px;
       justify-content: center;
     }
 
 
     @include vp-1023 {
-      grid-template-columns: 1fr;
-      gap: 85px;
-      justify-content: center;
+      gap: 0;
+      display: block;
     }
 
-    // @include vp-767 {
-    //   gap: 50px;
-    // }
-
-    @include vp-374 {
-      margin: 0;
-      // min-width: 320px;
-      min-height: 652px;
-      gap: 50px;
+    @include vp-500 {
+      display: grid;
+      grid-template-columns: 1fr;
+      // min-height: 652px;
+      gap: 40px;
     }
   }
 
@@ -55,7 +54,32 @@
     align-self: center;
 
     @include vp-1023 {
-      justify-self: center;
+      // justify-self: center;
+      display: none;
+    }
+  }
+
+  &__icon {
+    display: none;
+
+    @include vp-1023 {
+      display: inline-block;
+      width: 200px;
+      height: 180px;
+      float: left;
+      margin: 0 30px 10px 0;
+    }
+
+    @include vp-500 {
+      margin: 0 auto;
+    }
+
+    svg {
+      @include vp-1023 {
+        width: 200px;
+        height: 180px;
+        fill: $color-default-white;
+      }
     }
   }
 
@@ -75,6 +99,7 @@
       font-size: 20px;
       line-height: 40px;
       // padding-left: 20px;
+      width: 100%;
     }
 
     @include vp-767 {
@@ -91,7 +116,7 @@
     }
 
     @include vp-1023 {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
 
     @include vp-767 {
@@ -99,11 +124,11 @@
     }
   }
 
-  br {
-    @include vp-1023 {
-      display: none;
-    }
-  }
+  // br {
+  //   @include vp-1023 {
+  //     display: none;
+  //   }
+  // }
 
   &__mental {
     br {

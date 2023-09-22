@@ -61,6 +61,10 @@
     }
   }
 
+  &__text-green {
+    color: $color-shamrock;
+  }
+
   &__list {
     list-style-type: circle;
     padding-left: 40px;

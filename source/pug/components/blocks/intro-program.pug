@@ -4,6 +4,7 @@ mixin intro-program(data = {})
   - const textThree = data.textThree  || false
   - const textFour = data.textFour  || false
   - const text = data.text
+  - const iconName = data.iconName
 
   .intro-program&attributes(attributes)
     .container
@@ -12,6 +13,8 @@ mixin intro-program(data = {})
         .intro-program__wrapper
           .intro-program__pic
             +program-card(item)
+          .intro-program__icon
+            +icon(iconName, 200, 180)
           .intro-program__info
             p.intro-program__text!=`${text}`
             if textTwo
