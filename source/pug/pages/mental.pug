@@ -18,9 +18,10 @@ block variables
         image: "ma",
       },
       iconName: "icon-ma",
-      text: "Программа подходит детям от&nbsp;5&nbsp;до&nbsp;16&nbsp;лет, особенно рекомендуется детям у&nbsp;кого сложности с&nbsp;математикой. <br>Занятия проходят:<br> индивидуальные&nbsp;&mdash; 2&nbsp;раза в&nbsp;неделю по&nbsp;45&nbsp;мин <br>в&nbsp;группе (4-6&nbsp;детей)&nbsp;&mdash; 2&nbsp;раза в&nbsp;неделю по&nbsp;60&nbsp;мин или 1&nbsp;раз в&nbsp;неделю по&nbsp;1,5 часа",
-      textTwo: "Стоимость занятий в&nbsp;группе&nbsp;&mdash; 800 рублей",
-      textThree: "Стоимость индивидуальных занятий&nbsp;&mdash; 2000 рублей",
+      text: "Программа подходит детям от&nbsp;5&nbsp;до&nbsp;16&nbsp;лет, особенно рекомендуется детям у&nbsp;кого сложности с&nbsp;математикой.",
+      textTwo: "Занятия проходят:<br> индивидуальные&nbsp;&mdash; 2&nbsp;раза в&nbsp;неделю по&nbsp;45&nbsp;мин <br>в&nbsp;группе (4-6&nbsp;детей)&nbsp;&mdash; 2&nbsp;раза в&nbsp;неделю по&nbsp;60&nbsp;мин или 1&nbsp;раз в&nbsp;неделю по&nbsp;1,5 часа",
+      textThree: "Стоимость занятий в&nbsp;группе&nbsp;&mdash; 800 рублей",
+      textFour: "Стоимость индивидуальных занятий&nbsp;&mdash; 2500 рублей",
     }
   -
     const programData = {
@@ -31,7 +32,7 @@ block variables
 
 block main
   main
-    +intro-program(introData).intro-program__mental
+    +intro-program(introData).intro-program--mental
     +program(programData)
 
 block modals

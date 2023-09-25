@@ -2670,6 +2670,37 @@ select {
   margin-bottom: 50px;
 }
 
+.intro-program--mental .intro-program__text:nth-child(2),
+.intro-program--mental .intro-program__text:nth-child(4) {
+  color: #21CE94;
+}
+
+.intro-program--mental .intro-program__text:nth-child(1) {
+  margin-bottom: 0;
+}
+
+.intro-program--emotion .intro-program__text:nth-child(1),
+.intro-program--emotion .intro-program__text:nth-child(3) {
+  color: #21CE94;
+}
+
+.intro-program--psycho .intro-program__text:nth-child(2),
+.intro-program--psycho .intro-program__text:nth-child(4) {
+  color: #21CE94;
+}
+
+.intro-program--neiro .intro-program__text:nth-child(1),
+.intro-program--neiro .intro-program__text:nth-child(4),
+.intro-program--logic .intro-program__text:nth-child(1),
+.intro-program--logic .intro-program__text:nth-child(4) {
+  color: #21CE94;
+}
+
+.intro-program--neiro .intro-program__text:nth-child(1),
+.intro-program--logic .intro-program__text:nth-child(1) {
+  margin-bottom: 0;
+}
+
 .program__info {
   font-size: 20px;
   font-style: normal;
@@ -3227,7 +3258,7 @@ select {
     margin-bottom: 20px;
   }
 
-  .intro-program__mental br {
+  .intro-program--mental br {
     display: inline-block;
   }
 

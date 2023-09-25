@@ -18,9 +18,10 @@ block variables
         image: "logica",
       },
       iconName: "icon-logic",
-      text: "Программа подбирается индивидуально, после диагностики. <br>Занятия проходят 1-2 раза в&nbsp;неделю.",
-      textTwo: "Стоимость занятий в&nbsp;группе&nbsp;&mdash; 800 рублей ( в&nbsp;группе 4-6&nbsp;человек)",
-      textThree: "Стоимость индивидуальных занятий&nbsp;&mdash; 2000 рублей",
+      text: "Программа подбирается индивидуально, после диагностики.",
+      textTwo: "Занятия проходят 1-2 раза в&nbsp;неделю.",
+      textThree: "Стоимость занятий в&nbsp;группе&nbsp;&mdash; 800 рублей ( в&nbsp;группе 4-6&nbsp;человек)",
+      textFour: "Стоимость индивидуальных занятий&nbsp;&mdash; 2500 рублей",
     }
   -
     const programData = {
@@ -32,7 +33,7 @@ block variables
 
 block main
   main
-    +intro-program(introData)
+    +intro-program(introData).intro-program--logic
     +program(programData)
 
 block modals

@@ -124,17 +124,46 @@
     }
   }
 
-  // br {
-  //   @include vp-1023 {
-  //     display: none;
-  //   }
-  // }
-
-  &__mental {
+  &--mental {
     br {
       @include vp-1023 {
         display: inline-block;
       }
+    }
+
+    .intro-program__text:nth-child(2),
+    .intro-program__text:nth-child(4) {
+      color: $color-shamrock;
+    }
+
+    .intro-program__text:nth-child(1) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--emotion {
+    .intro-program__text:nth-child(1),
+    .intro-program__text:nth-child(3) {
+      color: $color-shamrock;
+    }
+  }
+
+  &--psycho {
+    .intro-program__text:nth-child(2),
+    .intro-program__text:nth-child(4) {
+      color: $color-shamrock;
+    }
+  }
+
+  &--neiro,
+  &--logic {
+    .intro-program__text:nth-child(1),
+    .intro-program__text:nth-child(4) {
+      color: $color-shamrock;
+    }
+
+    .intro-program__text:nth-child(1) {
+      margin-bottom: 0;
     }
   }
 }

@@ -21,7 +21,7 @@ block variables
       text: "Вы&nbsp;можете записаться на&nbsp;индивидуальную консультацию или оставить заявку на&nbsp;участие в&nbsp;online группе, offline группе.",
       textTwo: "Участие в&nbsp;группе offline&nbsp;&mdash; 1000 рублей",
       textThree: "Участие в&nbsp;группе online&nbsp;&mdash; 700 рублей",
-      textFour: "Индивидуальная консультация&nbsp;&mdash; 2000 рублей",
+      textFour: "Индивидуальная консультация&nbsp;&mdash; 2500 рублей",
     }
   -
     const programData = {
@@ -33,7 +33,7 @@ block variables
 
 block main
   main
-    +intro-program(introData)
+    +intro-program(introData).intro-program--psycho
     +program(programData)
 
 block modals
