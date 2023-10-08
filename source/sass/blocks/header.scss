@@ -24,6 +24,10 @@
     transition: padding-top $trans-600, box-shadow $trans-600;
   }
 
+  .container {
+    margin: 0 auto;
+  }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;

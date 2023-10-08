@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: column;
   justify-content: end;
-  align-items: center;
 
   @include vp-1439 {
     width: 278px;
@@ -45,15 +44,28 @@
   }
 
   &__btn {
-    position: relative;
+    position: static;
+    z-index: 1;
   }
+
+  &__btn::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
 
   .btn {
     opacity: 1;
     transition: opacity $trans-default;
 
-   @include hover-focus {
-    opacity: 0.6;
-  }
+    @include hover-focus {
+      opacity: 0.6;
+    }
   }
 }

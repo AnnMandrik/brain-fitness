@@ -6,8 +6,7 @@ mixin program-card(options = {})
   - const btn = options.btn || false
 
   .program-card&attributes(attributes)
-    a(href=options.href)
-      .program-card__pic
-        +picture-adaptive("content/program", image, "jpg", width, height, "", isLoadingLazy)
-      if btn
-        +btn({tag:"button", text: btnText}).program-card__btn
+    if btn
+      +btn({tag:"a", href: options.href, text: btnText}).program-card__btn
+    .program-card__pic
+      +picture-adaptive("content/program", image, "jpg", width, height, "", isLoadingLazy)

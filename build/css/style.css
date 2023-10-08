@@ -1443,14 +1443,8 @@ select {
 .container {
   width: 100%;
   max-width: 1440px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.container__inner {
-  margin-top: 228px;
-  margin-left: 35px;
-  margin-right: 35px;
+  margin: 228px auto 0 auto;
+  padding: 0 35px;
 }
 
 .header {
@@ -1461,6 +1455,10 @@ select {
   padding: var(--header-padding-top) 0 var(--header-padding-bottom);
   background-color: #011140;
   z-index: 10;
+}
+
+.header .container {
+  margin: 0 auto;
 }
 
 .header__wrapper {
@@ -1664,12 +1662,8 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-column-gap: 200px;
-  -moz-column-gap: 200px;
-  column-gap: 200px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   padding: 0 0 30px;
 }
 
@@ -1839,6 +1833,12 @@ select {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 5px 25px;
   width: 375px;
   min-height: 70px;
@@ -2455,11 +2455,6 @@ select {
   color: #21CE94;
 }
 
-.about .container__inner {
-  margin-left: 35px;
-  margin-right: 35px;
-}
-
 .about__wrapper {
   margin-top: 65px;
   display: -ms-grid;
@@ -2506,9 +2501,6 @@ select {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: end;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .program-card__pic {
@@ -2531,7 +2523,19 @@ select {
 }
 
 .program-card__btn {
-  position: relative;
+  position: static;
+  z-index: 1;
+}
+
+.program-card__btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
 .program-card .btn {
@@ -2556,18 +2560,6 @@ select {
   gap: 100px 45px;
   margin-top: 90px;
   padding: 0;
-}
-
-.program-list .program-card:nth-child(1) .btn {
-  padding: 25px 15px;
-}
-
-.program-list .program-card:nth-child(2) .btn {
-  padding: 25px 110px;
-}
-
-.program-list .program-card:nth-child(4) .btn {
-  padding: 25px 70px;
 }
 
 .skill-card__wrapper {
@@ -2627,10 +2619,9 @@ select {
   padding: 0;
 }
 
-.intro-program .container__inner {
+.intro-program .container {
   margin-top: 260px;
-  margin-left: 52px;
-  margin-right: 52px;
+  padding: 0 52px;
 }
 
 .intro-program .program-card {
@@ -2899,7 +2890,7 @@ select {
     font-size: 48px;
   }
 
-  .container__inner {
+  .container {
     margin-top: 160px;
   }
 
@@ -2954,18 +2945,6 @@ select {
     -webkit-column-gap: 85px;
     -moz-column-gap: 85px;
     column-gap: 85px;
-  }
-
-  .program-list .program-card:nth-child(1) .btn {
-    padding: 10px 20px;
-  }
-
-  .program-list .program-card:nth-child(2) .btn {
-    padding: 12px 78px;
-  }
-
-  .program-list .program-card:nth-child(4) .btn {
-    padding: 15px 60px;
   }
 
   .skill-card__wrapper {
@@ -3078,8 +3057,8 @@ select {
     font-size: 38px;
   }
 
-  .container__inner {
-    margin-top: 85px;
+  .container {
+    margin: 85px auto 0 auto;
   }
 
   .header {
@@ -3221,7 +3200,7 @@ select {
     display: none;
   }
 
-  .intro-program .container__inner {
+  .intro-program .container {
     margin-top: 200px;
   }
 
@@ -3297,12 +3276,6 @@ select {
 
   .container {
     padding: 0 20px;
-    margin: 0 auto;
-  }
-
-  .container__inner {
-    margin-left: 0;
-    margin-right: 0;
   }
 
   .header__wrapper {
@@ -3465,11 +3438,6 @@ select {
     padding-bottom: 20px;
   }
 
-  .about .container__inner {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
   .about__wrapper {
     margin-top: 58px;
   }
@@ -3500,10 +3468,8 @@ select {
     max-width: 280px;
   }
 
-  .intro-program .container__inner {
+  .intro-program .container {
     margin-top: 150px;
-    margin-left: 0;
-    margin-right: 0;
   }
 
   .intro-program__info {

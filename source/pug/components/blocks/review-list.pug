@@ -2,11 +2,10 @@ mixin review-list(data = {})
 
   .review-list
     .container
-      .container__inner
-        .review-list__content
-          .review-list__img-wrap
-            +picture("content", "bg-main", "png", 1814, 1954, "Цветные пятна", isLoadingLazy).review-list__bg-img
-        h2.title Почитайте наши отзывы
-        .review-list__wrapper
-          each card in data.cards
-            +review(card)
+      .review-list__content
+        .review-list__img-wrap
+          +picture("content", "bg-main", "png", 1814, 1954, "Цветные пятна", isLoadingLazy).review-list__bg-img
+      h2.title Почитайте наши отзывы
+      .review-list__wrapper
+        each card in data.cards
+          +review(card)

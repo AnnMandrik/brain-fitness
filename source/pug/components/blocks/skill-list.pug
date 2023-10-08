@@ -2,8 +2,7 @@ mixin skill-list(data = {})
 
   .skill-list
     .container
-      .container__inner
-        h2.title Прокачка навыков
-        .skill-list__wrapper
-          each card in data.cards
-            +skill-card(card)
+      h2.title Прокачка навыков
+      ul.skill-list__wrapper
+        each card in data.cards
+          +skill-card(card)

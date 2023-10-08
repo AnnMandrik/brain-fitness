@@ -1,14 +1,4 @@
 .about {
-  .container__inner {
-    margin-left: 35px;
-    margin-right: 35px;
-
-    @include vp-767 {
-      margin-left: 0;
-      margin-right: 0;
-    }
-  }
-
   &__wrapper {
     margin-top: 65px;
     display: grid;
@@ -47,7 +37,6 @@
 
     @include vp-1023 {
       font-size: 20px;
-      // line-height: 40px;
     }
 
     @include vp-767 {

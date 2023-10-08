@@ -8,18 +8,17 @@ mixin intro-program(data = {})
 
   .intro-program&attributes(attributes)
     .container
-      .container__inner
-        h1.visually-hidden Программа
-        .intro-program__wrapper
-          .intro-program__pic
-            +program-card(item)
-          .intro-program__icon
-            +icon(iconName, 200, 180)
-          .intro-program__info
-            p.intro-program__text!=`${text}`
-            if textTwo
-              p.intro-program__text!=`${textTwo}`
-            if textThree
-              p.intro-program__text!=`${textThree}`
-            if textFour
-              p.intro-program__text!=`${textFour}`
+      h1.visually-hidden Программа
+      .intro-program__wrapper
+        .intro-program__pic
+          +program-card(item)
+        .intro-program__icon
+          +icon(iconName, 200, 180)
+        .intro-program__info
+          p.intro-program__text!=`${text}`
+          if textTwo
+            p.intro-program__text!=`${textTwo}`
+          if textThree
+            p.intro-program__text!=`${textThree}`
+          if textFour
+            p.intro-program__text!=`${textFour}`

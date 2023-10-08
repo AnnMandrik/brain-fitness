@@ -1,8 +1,7 @@
 .intro-program {
-  .container__inner {
+  .container {
     margin-top: 260px;
-    margin-left: 52px;
-    margin-right: 52px;
+    padding: 0 52px;
 
     @include vp-1023 {
       margin-top: 200px;
@@ -10,13 +9,7 @@
 
     @include vp-767 {
       margin-top: 150px;
-      margin-left: 0;
-      margin-right: 0;
     }
-
-    // @include vp-500 {
-    //   margin-top: 150px;
-    // }
   }
 
   .program-card {

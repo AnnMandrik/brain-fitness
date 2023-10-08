@@ -7,7 +7,7 @@ mixin skill-card(options = {})
   - const height = options.height
   - const isSquare = options.isSquare  || false
 
-  .skill-card&attributes(attributes)
+  li.skill-card&attributes(attributes)
     if isSquare
       .skill-card__wrapper.skill-card__wrapper--square
         .skill-card__icon
