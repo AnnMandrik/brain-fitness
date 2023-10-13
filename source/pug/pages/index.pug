@@ -1,7 +1,7 @@
 extends ../components/base/layout
 
 block variables
-  - const title = "Нейропсихология" //- на страницах кроме главной используйте О нас — ProjectName
+  - const title = "Нейропсихология. Программы занятий по нейрогимнастике, ментальной арифметике, психологии, логике, тренировке эмоцианольного интеллекта." //- на страницах кроме главной используйте О нас — ProjectName
   - const wrapperMods = ""
   - const hasHeader = true
   - const headerMods = ""
@@ -154,10 +154,14 @@ block variables
       ],
     }
 
+block micromarking
+  meta(property='og:url', content='https://natalyaegay.ru/')
+  meta(property='og:title', content='Нейропсихология. Программы занятий по нейрогимнастике, ментальной арифметике, психологии, логике, тренировке эмоцианольного интеллекта.')
+  meta(property='og:description', content='Занятия по ментальной арифметике, логике, психологии с детьми и взрослыми онлайн. Помогаю развить эмоциональный интеллект. Тренирую по нейрогимнастике. Развиваю нейропсихологию вместе с вами.')
+  meta(property='og:type', content='website')
+
 block main
   main
-    //- на странице запрещен "голый" код
-    //- все блоки вставляются из папки pug/components/blocks
     +intro()
     +about()
     +program-list(programListData)

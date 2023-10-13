@@ -1,0 +1,28 @@
+User-Agent: *
+Disallow: /*.html
+Disallow: /*?
+Disallow: /*&
+Disallow: /404
+Disallow: /sitemap
+Disallow: /ui-kit
+
+
+User-agent: Yandex
+Disallow: /*.html
+Disallow: /*?
+Disallow: /*&
+Disallow: /404
+
+Disallow: /sitemap
+Disallow: /ui-kit
+
+User-agent: Googlebot
+Disallow: /*.html
+Disallow: /*?
+Disallow: /*&
+Disallow: /404
+
+Disallow: /sitemap
+Disallow: /ui-kit
+
+Sitemap: https://natalyaegay.ru/sitemap.xml

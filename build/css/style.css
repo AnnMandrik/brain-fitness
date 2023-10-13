@@ -1412,6 +1412,21 @@ select {
   letter-spacing: 0.7px;
 }
 
+.error {
+  color: #21CE94;
+  -webkit-transition: opacity 0.3s ease, -webkit-text-decoration 0.3s ease, -webkit-text-decoration-skip-ink 0.3s ease;
+  transition: opacity 0.3s ease, -webkit-text-decoration 0.3s ease, -webkit-text-decoration-skip-ink 0.3s ease;
+  transition: opacity 0.3s ease, text-decoration 0.3s ease, text-decoration-skip-ink 0.3s ease;
+  transition: opacity 0.3s ease, text-decoration 0.3s ease, text-decoration-skip-ink 0.3s ease, -webkit-text-decoration 0.3s ease, -webkit-text-decoration-skip-ink 0.3s ease;
+}
+
+.error.focus-visible:focus {
+  opacity: 0.7;
+  text-decoration: underline;
+  -webkit-text-decoration-skip-ink: none;
+  text-decoration-skip-ink: none;
+}
+
 .scroll-lock-ios {
   position: fixed;
   overflow: hidden;
@@ -3618,17 +3633,14 @@ select {
   }
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .header a.header__logo:hover:not(.focus-visible) {
-    opacity: 0.6;
-  }
-
-  .main-nav__link:not(.is-active):hover:not(.focus-visible) {
-    opacity: 0.6;
-  }
-}
-
 @media (hover: hover) {
+  .error:hover:not(.focus-visible) {
+    opacity: 0.7;
+    text-decoration: underline;
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;
+  }
+
   .footer__logo:hover:not(.focus-visible),
   .footer__social-item:hover:not(.focus-visible),
   .footer__program:hover:not(.focus-visible),
@@ -3649,6 +3661,16 @@ select {
   }
 
   .program-card .btn:hover:not(.focus-visible) {
+    opacity: 0.6;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .header a.header__logo:hover:not(.focus-visible) {
+    opacity: 0.6;
+  }
+
+  .main-nav__link:not(.is-active):hover:not(.focus-visible) {
     opacity: 0.6;
   }
 }

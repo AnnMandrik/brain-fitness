@@ -1,7 +1,8 @@
 extends ../components/base/layout
 
 block variables
-  - const title = "Программа курса Ментальная арифметика" //- на страницах кроме главной используйте О нас — ProjectName
+  - const title = "Программа занятий по ментальной арифметике"
+  - const description = "Занятия по развитию быстрой обработки и анализу информации"
   - const wrapperMods = ""
   - const hasHeader = true
   - const headerMods = ""
@@ -29,6 +30,12 @@ block variables
       text: "Ментальная арифметика- это универсальная программа, успешно работает во&nbsp;многих странах, помогает детям и&nbsp;взрослым развивать интеллект, становиться успешнее. Методика признана организацией ЮНЕСКО, основы этой системы используются в&nbsp;японской начальной школе. Её&nbsp;задачи&nbsp;&mdash; научить детей быстрой обработке и&nbsp;анализу информации.",
       textTwo: "Ментальная арифметика&nbsp;&mdash; это не&nbsp;просто система для счета. Сторонники такого метода уверены, что она помогает решать в&nbsp;уме сложные математические примеры, развивает память, логику, способность к&nbsp;многозадачности и&nbsp;концентрации внимания.",
     }
+
+block micromarking
+  meta(property='og:url', content='https://natalyaegay.ru/mental.html')
+  meta(property='og:title', content='Программа занятий по ментальной арифметике')
+  meta(property='og:description', content='Занятия по развитию быстрой обработки и анализу информации')
+  meta(property='og:type', content='website')
 
 block main
   main

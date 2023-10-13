@@ -1,7 +1,8 @@
 extends ../components/base/layout
 
 block variables
-  - const title = "Программа курса Нейрогимнастики" //- на страницах кроме главной используйте О нас — ProjectName
+  - const title = "Программа занятий по нейрогимнастике"
+  - const description = "Комплекс нейроупражнений для активации мозговой деятельности"
   - const wrapperMods = ""
   - const hasHeader = true
   - const headerMods = ""
@@ -30,6 +31,11 @@ block variables
       textTwo: "Наиболее эффективны нейроупражнения в&nbsp;возрасте до&nbsp;восьми лет&nbsp;&mdash; в&nbsp;этот период у&nbsp;детей активно формируются межполушарные связи и&nbsp;закладывается основа интеллекта.",
       textThree: "Взрослым она поможет наладит работу нервной системы, работу мозга, улучшит запоминание информации,  избавит от тревоги и стресса и сделает более эффективным в работе.",
     }
+block micromarking
+  meta(property='og:url', content='https://natalyaegay.ru/neurogym.html')
+  meta(property='og:title', content='Программа занятий по нейрогимнастике')
+  meta(property='og:description', content='Комплекс нейроупражнений для активации мозговой деятельности')
+  meta(property='og:type', content='website')
 
 block main
   main

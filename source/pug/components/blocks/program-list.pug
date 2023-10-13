@@ -3,7 +3,7 @@ mixin program-list(data = {})
   .program-list(id="program")
     .container
       h2.title Программы
-        .program-list__wrapper
-          each item in data.items
-            +program-card(item)
+      .program-list__wrapper
+        each item in data.items
+          +program-card(item)
 

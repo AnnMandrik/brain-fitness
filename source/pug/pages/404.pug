@@ -1,0 +1,23 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "404"
+  - const description = "Ошибка 404"
+  - const wrapperMods = ""
+  - const hasHeader = false
+  - const headerMods = ""
+  - const hasFooter = false
+  - const footerMods = ""
+  - const currentUrl = "404.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+
+block micromarking
+  meta(property='og:url', content='https://natalyaegay.ru/404.html')
+  meta(property='og:title', content='404')
+  meta(property='og:description', content='Ошибка 404')
+  meta(property='og:type', content='website')
+
+block main
+  main
+    .container
+      h1.visually-hidden Ошибка 404
+      h2.title Ошибка 404.<br>Страница не&nbsp;обнаружена!<br>Перейти <a class='error' href='https://natalyaegay.ru/'>на&nbsp;главную</a>

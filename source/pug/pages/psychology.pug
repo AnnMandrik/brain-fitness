@@ -1,7 +1,8 @@
 extends ../components/base/layout
 
 block variables
-  - const title = "Программа курса Психологии" //- на страницах кроме главной используйте О нас — ProjectName
+  - const title = "Программа занятий психологией"
+  - const description = "Занятия по развитию и пониманию межличностных отношений"
   - const wrapperMods = ""
   - const hasHeader = true
   - const headerMods = ""
@@ -30,6 +31,12 @@ block variables
       textTwo: "Зачем нужна психология?",
       textThree: "Знание психологии играет важную роль в&nbsp;жизни общества и&nbsp;человека, делает жизнь ярче, успешнее и&nbsp;счастливее, помогает человеку реализовать свои возможности, лучше познать себя и&nbsp;окружающих, стать увереннее в&nbsp;себе, овладеть на&nbsp;высоком уровне коммуникативными навыками, эффективно решать производственные и&nbsp;личностные проблемы.",
     }
+
+block micromarking
+  meta(property='og:url', content='https://natalyaegay.ru/psychology.html')
+  meta(property='og:title', content='Программа занятий психологией')
+  meta(property='og:description', content='Занятия по развитию и пониманию межличностных отношений')
+  meta(property='og:type', content='website')
 
 block main
   main

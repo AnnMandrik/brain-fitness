@@ -1,7 +1,8 @@
 extends ../components/base/layout
 
 block variables
-  - const title = "Программа курса Эмоциональный интеллект" //- на страницах кроме главной используйте О нас — ProjectName
+  - const title = "Программа занятий по развитию эмоционального интеллекта"
+  - const description = "Занятия по работе с эмоциями и развитию эмпатии"
   - const wrapperMods = ""
   - const hasHeader = true
   - const headerMods = ""
@@ -30,6 +31,12 @@ block variables
       list: true,
       textThree: "Если вы&nbsp;хотите понять свои чувства и&nbsp;научиться контролировать эмоции и&nbsp;проявление&nbsp;их, управлять вашими отношениями, то&nbsp;звоните и&nbsp;записывайтесь на&nbsp;встречу!",
     }
+
+block micromarking
+  meta(property='og:url', content='https://natalyaegay.ru/emotion.html')
+  meta(property='og:title', content='Программа занятий по развитию эмоционального интеллекта')
+  meta(property='og:description', content='Занятия по работе с эмоциями и развитию эмпатии')
+  meta(property='og:type', content='website')
 
 block main
   main

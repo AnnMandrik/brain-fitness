@@ -60,6 +60,17 @@
   }
 }
 
+.error {
+  color: $color-shamrock;
+  transition: opacity $trans-default, text-decoration $trans-default, text-decoration-skip-ink $trans-default ;
+
+  @include hover-focus {
+    opacity: 0.7;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+  }
+}
+
 .scroll-lock-ios {
   position: fixed;
 

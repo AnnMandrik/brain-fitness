@@ -4,13 +4,13 @@ include ../components
 
 block variables
 
-html(lang="ru")
+html(lang="ru" prefix=micromarking ? "og: //ogp.me/ns#" : false)
   head
     title= title
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
-    meta(name="description", content="Здоровье твоего мозга определяют качество твоей жизни! Нейропсихология&nbsp;&mdash; это направление, лежащее на&nbsp;стыке психологии и&nbsp;нейронауки, нацелена на&nbsp;понимание связи структуры и&nbsp;функционирования головного мозга с&nbsp;психологическим поведением людей.")
+    meta(name="description", content=description ? description : "Занятия по ментальной арифметике, логике, психологии с детьми и взрослыми онлайн. Помогаю развить эмоциональный интеллект. Тренирую по нейрогимнастике. Развиваю нейропсихологию вместе с вами.")
     link(rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png")
     link(rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png")
     link(rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png")
@@ -25,6 +25,8 @@ html(lang="ru")
     link(rel="preload", href="fonts/Montserrat-SemiBold.woff2", as="font", crossorigin="anonymous")
 
     link(rel="stylesheet", href="css/style.min.css")
+
+    block micromarking
 
   body
     +sprite()
@@ -41,3 +43,5 @@ html(lang="ru")
 
     script(src="js/vendor.min.js")
     script(src="js/main.min.js")
+
+include metrika
