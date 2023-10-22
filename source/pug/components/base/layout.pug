@@ -6,6 +6,10 @@ block variables
 
 html(lang="ru" prefix=micromarking ? "og: //ogp.me/ns#" : false)
   head
+     // Yandex.Metrika counter start
+    script(type='text/javascript').
+      (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};m[i].l=1*new Date();for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");ym(95244728, "init", {clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true});
+    // Yandex.Metrika counter end
     title= title
     meta(charset="utf-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
@@ -29,6 +33,9 @@ html(lang="ru" prefix=micromarking ? "og: //ogp.me/ns#" : false)
     block micromarking
 
   body
+    noscript
+      div
+        img(src="https://mc.yandex.ru/watch/95244728" style="position:absolute; left:-9999px;" alt="")
     +sprite()
     .wrapper(class=wrapperMods)
       if (hasHeader)
@@ -44,4 +51,4 @@ html(lang="ru" prefix=micromarking ? "og: //ogp.me/ns#" : false)
     script(src="js/vendor.min.js")
     script(src="js/main.min.js")
 
-include metrika
+    //- include metrika
