@@ -2707,6 +2707,21 @@ select {
   margin-bottom: 0;
 }
 
+.intro-program__text--href {
+  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 38px;
+  color: #21CE94;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.intro-program__text--href.focus-visible:focus {
+  opacity: 0.6;
+}
+
 .program__info {
   font-size: 20px;
   font-style: normal;
@@ -2728,6 +2743,15 @@ select {
 
 .program__emotion .program__text:nth-child(2) {
   margin-bottom: 0;
+}
+
+.program__btn-wrapper {
+  text-align: center;
+}
+
+.program__btn {
+  text-align: center;
+  margin-top: 50px;
 }
 
 .review {
@@ -3003,6 +3027,10 @@ select {
     margin-bottom: 45px;
   }
 
+  .intro-program__text--href {
+    font-size: 28px;
+  }
+
   .review__wrapper {
     padding: 25px;
   }
@@ -3256,6 +3284,10 @@ select {
     display: inline-block;
   }
 
+  .intro-program__text--href {
+    font-size: 26px;
+  }
+
   .review {
     display: none;
   }
@@ -3496,6 +3528,10 @@ select {
     margin-bottom: 30px;
   }
 
+  .intro-program__text--href {
+    font-size: 24px;
+  }
+
   .program__info {
     margin-top: 50px;
   }
@@ -3622,6 +3658,10 @@ select {
     line-height: 28px;
   }
 
+  .intro-program__text--href {
+    font-size: 22px;
+  }
+
   .program__info {
     font-size: 15px;
     line-height: 28px;
@@ -3661,6 +3701,10 @@ select {
   }
 
   .program-card .btn:hover:not(.focus-visible) {
+    opacity: 0.6;
+  }
+
+  .intro-program__text--href:hover:not(.focus-visible) {
     opacity: 0.6;
   }
 }

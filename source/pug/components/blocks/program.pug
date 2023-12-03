@@ -20,3 +20,5 @@ mixin program(data = {})
                 li.program__item управление отношениями.
         if textThree
           p.program__text!=`${textThree}`
+      .program__btn-wrapper
+        +btn({tag:"a", href: "https://t.me/Nataly_Miro", text: "Пробная неделя"}).program__btn
